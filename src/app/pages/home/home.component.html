@@ -1,0 +1,10 @@
+<app-base-title title="saulo teodoz"></app-base-title>
+<div class="articles">
+  <div class="main-article">
+    <app-big-card></app-big-card>
+  </div>
+  <div class="other-articles" *ngFor="let article of articles">
+    <app-small-card [article]="article">
+    </app-small-card>
+  </div>
+</div>
