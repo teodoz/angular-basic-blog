@@ -1,10 +1,15 @@
-<app-base-title title="saulo teodoz"></app-base-title>
+<app-menu-bar></app-menu-bar>
+<app-base-title
+  title="tech news"
+  subtitle="onde a tecnologia é notícia"
+></app-base-title>
 <div class="articles">
   <div class="main-article">
-    <app-big-card></app-big-card>
+    <app-big-card [article]="bigArticle"></app-big-card>
   </div>
-  <div class="other-articles" *ngFor="let article of articles">
-    <app-small-card [article]="article">
+  <div class="other-articles">
+    <h1 class="title">Outras notícias</h1>
+    <app-small-card *ngFor="let article of articles" [article]="article">
     </app-small-card>
   </div>
 </div>

@@ -1,1 +1,13 @@
-<p>big-card works!</p>
+<div class="container">
+  <div
+    class="image"
+    [style]="{ backgroundImage: 'url(' + article?.image + ')' }"
+  ></div>
+  <div class="content">
+    <small class="date">{{ article?.date }}</small>
+    <a class="title" href="#"
+      ><h2>{{ article?.title }}</h2></a
+    >
+    <p class="description">{{ article?.text }}</p>
+  </div>
+</div>

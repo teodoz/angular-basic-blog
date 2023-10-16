@@ -1,0 +1,23 @@
+.articles {
+  display: flex;
+  gap: 16px;
+
+  @media screen and (max-width: 478px) {
+    flex-direction: column;
+  }
+  .main-article {
+    height: 600px;
+    @media screen and (max-width: 478px) {
+      height: 100%;
+    }
+  }
+  .other-articles {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    overflow-y: scroll;
+    .title {
+      font-size: 20px;
+    }
+  }
+}
