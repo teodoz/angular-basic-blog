@@ -3,8 +3,13 @@
     class="banner"
     [style]="{ backgroundImage: 'url(' + content?.image + '/1900)' }"
   >
+    <a class="back" (click)="goBack()">< Voltar</a>
     <div class="title">{{ content?.title }}</div>
   </div>
-
-  <div [innerHTML]="content?.description || content?.text" class="text"></div>
+  <div
+    [innerHTML]="
+      content?.date + '<br /><br />' + content?.description || content?.text
+    "
+    class="text"
+  ></div>
 </div>

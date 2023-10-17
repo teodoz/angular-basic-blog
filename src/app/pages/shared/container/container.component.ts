@@ -21,4 +21,8 @@ export class ContainerComponent implements OnInit {
   ngOnInit() {
     document.body.scrollTop = 0;
   }
+
+  goBack() {
+    history.back();
+  }
 }
