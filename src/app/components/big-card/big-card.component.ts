@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ArticleModel } from 'src/app/pages/home/home.component';
+import { NewsService } from 'src/app/services/news.service';
 
 @Component({
   selector: 'app-big-card',
@@ -8,4 +9,10 @@ import { ArticleModel } from 'src/app/pages/home/home.component';
 })
 export class BigCardComponent {
   @Input() article: ArticleModel | undefined;
+
+  constructor(private newsService: NewsService) {}
+
+  openNews() {
+    this.newsService.setNew(this.article);
+  }
 }

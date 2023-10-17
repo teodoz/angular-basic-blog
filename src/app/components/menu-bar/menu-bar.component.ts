@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-bar.component.scss'],
 })
 export class MenuBarComponent {
-  menu: string[] = ['home', 'sobre', 'notícias', 'contato'];
+  menu = [
+    { text: 'home', link: '' },
+    { text: 'sobre', link: 'about' },
+  ];
 }

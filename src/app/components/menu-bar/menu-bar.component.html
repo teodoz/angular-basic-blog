@@ -1,7 +1,7 @@
 <div class="container">
   <ul class="menu">
     <li class="item" *ngFor="let item of menu">
-      <a href="#" class="link">{{ item }}</a>
+      <a [routerLink]="item.link" class="link">{{ item.text }}</a>
     </li>
   </ul>
 </div>
