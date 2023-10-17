@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export interface PageContainerModel {
   title: string;
-  text: string;
+  text?: string;
   image: string;
   date?: string;
   description?: string;
